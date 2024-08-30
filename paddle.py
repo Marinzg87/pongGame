@@ -1,5 +1,5 @@
 from turtle import Turtle
-SPEED = 25
+SPEED = 50
 
 
 class Paddle(Turtle):
