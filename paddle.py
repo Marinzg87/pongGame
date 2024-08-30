@@ -20,6 +20,3 @@ class Paddle(Turtle):
     def go_down(self):
         new_y = self.ycor() - SPEED
         self.goto(self.xcor(), new_y)
-
-    def score(self):
-        self.points += 1
