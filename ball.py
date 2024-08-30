@@ -1,5 +1,4 @@
 from turtle import Turtle
-BALL_SPEED = 3
 
 
 class Ball(Turtle):
@@ -10,8 +9,8 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.goto(starting_position)
-        self.x_move = BALL_SPEED
-        self.y_move = BALL_SPEED
+        self.x_move = 3
+        self.y_move = 3
 
     def move(self):
         new_x = self.xcor() + self.x_move
