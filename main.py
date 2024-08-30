@@ -1,4 +1,3 @@
-import time
 from turtle import Screen
 from paddle import Paddle
 from ball import Ball
@@ -34,8 +33,7 @@ while game_is_on:
 
     # detect collision with both paddles
     if (ball.distance(r_paddle) < 50 and ball.xcor() > 340
-        or
-        ball.distance(l_paddle) < 50 and ball.xcor() < -340):
+            or ball.distance(l_paddle) < 50 and ball.xcor() < -340):
         ball.bounce_x()
 
     # detect when the r_paddle missed
