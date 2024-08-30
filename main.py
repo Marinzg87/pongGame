@@ -35,4 +35,15 @@ while game_is_on:
         ball.distance(l_paddle) < 50 and ball.xcor() < -340):
         ball.bounce_x()
 
+    # detect when the r_paddle missed
+    if ball.xcor() > 380:
+        ball.refresh()
+        l_paddle.score()
+
+    # detect when the l_paddle missed
+    if ball.xcor() < -380:
+        ball.refresh()
+        r_paddle.score()
+
+
 screen.exitonclick()

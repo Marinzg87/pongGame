@@ -11,6 +11,7 @@ class Paddle(Turtle):
         self.shapesize(stretch_wid=5, stretch_len=1)
         self.penup()
         self.goto(starting_position)
+        self.points = 0
 
     def go_up(self):
         new_y = self.ycor() + SPEED
@@ -19,3 +20,6 @@ class Paddle(Turtle):
     def go_down(self):
         new_y = self.ycor() - SPEED
         self.goto(self.xcor(), new_y)
+
+    def score(self):
+        self.points += 1
